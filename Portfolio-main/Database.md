@@ -5,12 +5,6 @@ This application uses **MongoDB Atlas** as its primary cloud database to provide
 
 ---
 
-## MongoDB Atlas Connection & Configuration
-
-- **Cluster Endpoint**: `cluster0.qgvkxcj.mongodb.net`
-- **Connection URI**: `mongodb+srv://sanaullah:portfolio@cluster0.qgvkxcj.mongodb.net/?appName=Cluster0`
-- **Allowed Network IP**: `154.192.5.104/32` (and server egress IP range)
-- **Database Name**: `portfolio_db`
 
 ---
 
