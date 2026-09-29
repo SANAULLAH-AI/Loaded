@@ -1,0 +1,8 @@
+{
+  "name": "Fine-Tuned LLM Chatbot",
+  "description": "Single-page project showcase and interactive fine-tuned LLM-powered chatbot for Sanaullah (BSCS Data Science & AI Engineer).",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

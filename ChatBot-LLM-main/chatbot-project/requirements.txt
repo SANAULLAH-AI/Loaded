@@ -1,0 +1,28 @@
+# Deep Learning & Large Language Model Stack
+torch>=2.2.0
+transformers>=4.38.0
+datasets>=2.17.0
+accelerate>=0.27.0
+peft>=0.9.0
+bitsandbytes>=0.42.0
+safetensors>=0.4.2
+triton>=2.1.0; sys_platform == 'linux'
+
+# Serving & Web Interfaces
+fastapi>=0.110.0
+uvicorn[standard]>=0.28.0
+gradio>=4.20.0
+pydantic>=2.6.0
+python-dotenv>=1.0.1
+requests>=2.31.0
+
+# Evaluation, Data & Scientific Computing
+pandas>=2.2.0
+numpy>=1.26.0
+matplotlib>=3.8.0
+scipy>=1.12.0
+pyyaml>=6.0.1
+tqdm>=4.66.0
+evaluate>=0.4.1
+rouge-score>=0.1.2
+scikit-learn>=1.4.0

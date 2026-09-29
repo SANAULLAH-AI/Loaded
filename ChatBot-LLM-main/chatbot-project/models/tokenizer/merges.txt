@@ -1,0 +1,9 @@
+#version: 0.2
+S ana
+ana ullah
+A bas
+bas yn
+Py Torch
+C NN
+Data Science
+Deep Learning

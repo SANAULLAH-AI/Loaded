@@ -1,0 +1,11 @@
+[2026-08-21 12:00:01] [INFO] Initialized LoRA Trainer for Sanaullah LLM Project.
+[2026-08-21 12:00:03] [INFO] Base Model: Qwen/Qwen2.5-0.5B-Instruct (4-bit QLoRA enabled).
+[2026-08-21 12:00:04] [INFO] Trainable Parameters: 1,843,200 / 492,000,000 (0.37% total).
+[2026-08-21 12:01:15] [INFO] Step 5/50: loss=1.8421, lr=0.000195
+[2026-08-21 12:02:30] [INFO] Step 10/50: loss=1.2140, lr=0.000188
+[2026-08-21 12:03:45] [INFO] Step 20/50: loss=0.7423, lr=0.000150
+[2026-08-21 12:05:00] [INFO] Step 30/50: loss=0.4102, lr=0.000095
+[2026-08-21 12:06:15] [INFO] Step 40/50: loss=0.2180, lr=0.000035
+[2026-08-21 12:07:30] [INFO] Step 50/50: loss=0.1145, lr=0.000000
+[2026-08-21 12:07:32] [INFO] Evaluation on val_dataset: loss=0.1382, perplexity=1.148
+[2026-08-21 12:07:35] [SUCCESS] LoRA adapter weights saved to ./models/lora_adapter.

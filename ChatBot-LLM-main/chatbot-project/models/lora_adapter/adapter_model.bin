@@ -1,0 +1,3 @@
+# LoRA Checkpoint Binary Placeholder
+# In actual training, torch.save(model.state_dict(), 'adapter_model.bin') outputs binary weight tensors here.
+# Weights: q_proj, k_proj, v_proj, o_proj (r=16, alpha=32)

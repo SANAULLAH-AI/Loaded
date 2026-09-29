@@ -1,0 +1,245 @@
+@import "tailwindcss";
+
+@variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --bg-main: #f8fafc;
+    --bg-card: rgba(255, 255, 255, 0.85);
+    --bg-card-border: rgba(226, 232, 240, 0.8);
+    --text-primary: #0f172a;
+    --text-secondary: #475569;
+    --accent-primary: #2563eb;
+    --accent-secondary: #0d9488;
+    --accent-gold: #d97706;
+    --accent-red: #dc2626;
+    --accent-neonpista: #65a30d;
+  }
+
+  .dark {
+    --bg-main: #000000;
+    --bg-card: rgba(10, 10, 10, 0.95);
+    --bg-card-border: rgba(212, 175, 55, 0.25);
+    --text-primary: #ffffff;
+    --text-secondary: #a1a1aa;
+    --accent-primary: #ffd700;
+    --accent-secondary: #ff0000;
+    --accent-gold: #ffd700;
+    --accent-red: #dc2626;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  body {
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    overflow-x: hidden;
+  }
+}
+
+/* ==========================================================================
+   GLOBAL TEXT SELECTION STYLING (Light & Dark Mode High-Contrast)
+   ========================================================================== */
+
+/* --- LIGHT MODE SELECTION --- */
+::selection {
+  background-color: rgba(255, 215, 0, 0.28); /* Premium Soft Gold (28% Opacity) */
+  color: #1a0f00;                             /* High contrast deep charcoal golden text */
+  text-shadow: 0 0 10px rgba(217, 119, 6, 0.4); /* Soft warm glow */
+}
+
+::-moz-selection {
+  background-color: rgba(255, 215, 0, 0.28);
+  color: #1a0f00;
+  text-shadow: 0 0 10px rgba(217, 119, 6, 0.4);
+}
+
+/* --- DARK MODE SELECTION --- */
+.dark ::selection,
+html.dark ::selection {
+  background-color: rgba(0, 242, 254, 0.25);  /* Premium Electric Cyan (25% Opacity) */
+  color: #ffffff;                             /* Crisp White for ultimate dark contrast */
+  text-shadow: 0 0 15px rgba(0, 242, 254, 0.9), 
+               0 0 6px rgba(138, 43, 226, 0.6); /* Cyan & Purple Hybrid Glow */
+}
+
+.dark ::-moz-selection,
+html.dark ::-moz-selection {
+  background-color: rgba(0, 242, 254, 0.25);
+  color: #ffffff;
+  text-shadow: 0 0 15px rgba(0, 242, 254, 0.9), 0 0 6px rgba(138, 43, 226, 0.6);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.3);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.6);
+}
+
+/* ==========================================================================
+   DYNAMIC PORTFOLIO ACCENT THEMES (Active in Dark Mode Only)
+   ========================================================================== */
+
+/* 1. EMERALD AI GREEN (.dark.theme-emerald) */
+.dark.theme-emerald {
+  --accent-primary: #34d399;
+  --accent-secondary: #22d3ee;
+}
+.dark.theme-emerald [class*="dark:text-amber-"] {
+  color: #34d399 !important;
+}
+.dark.theme-emerald [class*="dark:border-amber-"] {
+  border-color: rgba(16, 185, 129, 0.35) !important;
+}
+.dark.theme-emerald [class*="dark:bg-amber-400"] {
+  background-color: #34d399 !important;
+  color: #000000 !important;
+}
+.dark.theme-emerald [class*="dark:bg-amber-300"] {
+  background-color: #6ee7b7 !important;
+  color: #000000 !important;
+}
+.dark.theme-emerald [class*="dark:bg-amber-500"] {
+  background-color: rgba(16, 185, 129, 0.2) !important;
+}
+.dark.theme-emerald [class*="dark:text-red-"],
+.dark.theme-emerald [class*="dark:decoration-red-"] {
+  color: #22d3ee !important;
+  text-decoration-color: #22d3ee !important;
+}
+.dark.theme-emerald [class*="dark:border-red-"] {
+  border-color: rgba(34, 211, 238, 0.35) !important;
+}
+
+/* 2. CYBER NEON BLUE (.dark.theme-blue) */
+.dark.theme-blue {
+  --accent-primary: #60a5fa;
+  --accent-secondary: #818cf8;
+}
+.dark.theme-blue [class*="dark:text-amber-"] {
+  color: #60a5fa !important;
+}
+.dark.theme-blue [class*="dark:border-amber-"] {
+  border-color: rgba(59, 130, 246, 0.35) !important;
+}
+.dark.theme-blue [class*="dark:bg-amber-400"] {
+  background-color: #60a5fa !important;
+  color: #000000 !important;
+}
+.dark.theme-blue [class*="dark:bg-amber-300"] {
+  background-color: #93c5fd !important;
+  color: #000000 !important;
+}
+.dark.theme-blue [class*="dark:bg-amber-500"] {
+  background-color: rgba(59, 130, 246, 0.2) !important;
+}
+.dark.theme-blue [class*="dark:text-red-"],
+.dark.theme-blue [class*="dark:decoration-red-"] {
+  color: #818cf8 !important;
+  text-decoration-color: #818cf8 !important;
+}
+.dark.theme-blue [class*="dark:border-red-"] {
+  border-color: rgba(129, 140, 248, 0.35) !important;
+}
+
+/* 3. ROYAL VIOLET (.dark.theme-purple / .dark.theme-violet) */
+.dark.theme-purple,
+.dark.theme-violet {
+  --accent-primary: #c084fc;
+  --accent-secondary: #f472b6;
+}
+.dark.theme-purple [class*="dark:text-amber-"],
+.dark.theme-violet [class*="dark:text-amber-"] {
+  color: #c084fc !important;
+}
+.dark.theme-purple [class*="dark:border-amber-"],
+.dark.theme-violet [class*="dark:border-amber-"] {
+  border-color: rgba(168, 85, 247, 0.35) !important;
+}
+.dark.theme-purple [class*="dark:bg-amber-400"],
+.dark.theme-violet [class*="dark:bg-amber-400"] {
+  background-color: #c084fc !important;
+  color: #000000 !important;
+}
+.dark.theme-purple [class*="dark:bg-amber-300"],
+.dark.theme-violet [class*="dark:bg-amber-300"] {
+  background-color: #e9d5ff !important;
+  color: #000000 !important;
+}
+.dark.theme-purple [class*="dark:bg-amber-500"],
+.dark.theme-violet [class*="dark:bg-amber-500"] {
+  background-color: rgba(168, 85, 247, 0.2) !important;
+}
+.dark.theme-purple [class*="dark:text-red-"],
+.dark.theme-violet [class*="dark:text-red-"],
+.dark.theme-purple [class*="dark:decoration-red-"],
+.dark.theme-violet [class*="dark:decoration-red-"] {
+  color: #f472b6 !important;
+  text-decoration-color: #f472b6 !important;
+}
+.dark.theme-purple [class*="dark:border-red-"],
+.dark.theme-violet [class*="dark:border-red-"] {
+  border-color: rgba(244, 114, 182, 0.35) !important;
+}
+
+/* 4. OBSIDIAN CRIMSON (.dark.theme-crimson) */
+.dark.theme-crimson {
+  --accent-primary: #fb7185;
+  --accent-secondary: #f87171;
+}
+.dark.theme-crimson [class*="dark:text-amber-"] {
+  color: #fb7185 !important;
+}
+.dark.theme-crimson [class*="dark:border-amber-"] {
+  border-color: rgba(244, 63, 94, 0.35) !important;
+}
+.dark.theme-crimson [class*="dark:bg-amber-400"] {
+  background-color: #fb7185 !important;
+  color: #ffffff !important;
+}
+.dark.theme-crimson [class*="dark:bg-amber-300"] {
+  background-color: #fca5a5 !important;
+  color: #000000 !important;
+}
+.dark.theme-crimson [class*="dark:bg-amber-500"] {
+  background-color: rgba(244, 63, 94, 0.2) !important;
+}
+.dark.theme-crimson [class*="dark:text-red-"],
+.dark.theme-crimson [class*="dark:decoration-red-"] {
+  color: #f87171 !important;
+  text-decoration-color: #f87171 !important;
+}
+.dark.theme-crimson [class*="dark:border-red-"] {
+  border-color: rgba(248, 113, 113, 0.35) !important;
+}
+
+/* Glassmorphism helpers */
+.glass-panel {
+  background: var(--bg-card);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--bg-card-border);
+}
+
+/* Animated Gradient Background */
+@keyframes pulseGlow {
+  0%, 100% { transform: scale(1) translate(0, 0); opacity: 0.4; }
+  50% { transform: scale(1.1) translate(10px, -10px); opacity: 0.7; }
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 8s ease-in-out infinite;
+}

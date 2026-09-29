@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# Training Artifacts, Checkpoints & Large Binaries
+checkpoints/
+*.pt
+*.pth
+*.bin
+*.safetensors
+!models/lora_adapter/adapter_model.bin
+wandb/
+runs/
+
+# Environment Variables & Keys
+.env
+.env.local
+*.pem
+*.key
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,18 @@
+{
+  "<|endoftext|>": 0,
+  "<|im_start|>": 1,
+  "<|im_end|>": 2,
+  "Sanaullah": 3,
+  "Abasyn": 4,
+  "University": 5,
+  "PyTorch": 6,
+  "CNN": 7,
+  "Computer": 8,
+  "Vision": 9,
+  "Data": 10,
+  "Science": 11,
+  "Engineer": 12,
+  "Python": 13,
+  "Deep": 14,
+  "Learning": 15
+}

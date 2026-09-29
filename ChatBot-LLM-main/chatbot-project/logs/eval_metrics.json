@@ -1,0 +1,13 @@
+{
+  "epoch": 5.0,
+  "train_loss": 0.1145,
+  "eval_loss": 0.1382,
+  "eval_perplexity": 1.148,
+  "eval_rouge1": 0.892,
+  "eval_rouge2": 0.784,
+  "eval_rougeL": 0.865,
+  "eval_bleu": 0.762,
+  "total_flos": 12849204859392.0,
+  "train_runtime_seconds": 454.2,
+  "samples_per_second": 8.81
+}

@@ -1,0 +1,194 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    padding:0;
+    position:relative;
+}
+
+.M{
+    background-image:url(./images/blue.png) ;
+    width:100%;
+    height:619px;
+    border:5px solid;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-size:cover;
+   animation-fill-mode: forwards;
+   animation:box 10s infinite;
+   animation-duration: 10s;
+    margin:0;
+    padding:0;
+    
+ 
+}
+.pic{
+    width: 400px;
+    height:280px;
+    border:10px ;
+    border-style:groove ;
+    border-color: rgb(167, 252, 255);
+    margin-left:490px;
+    margin-top:5px;
+    position: relative;
+    background-image:url(./images/i.jpg) ;
+    /* display: flex;
+    justify-content: center; */
+    animation:box 10s infinite;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-size: cover;
+    animation-fill-mode: forwards;
+    animation-duration: 10s;
+}
+.box{
+    width: 600px;
+    height:200px;
+    border:10px ;
+    border-style:groove ;
+    border-color: rgb(167, 252, 255);
+    margin-left:400px;
+    /* margin-top:450px; */
+    position: absolute;
+    display: flex;
+    overflow:hidden;
+    justify-content: center;
+    animation:box 10s infinite;
+    animation-duration: 10s;
+    background-attachment: fixed;
+    background-blend-mode: color-burn;
+}
+.text{
+    float: left;
+    font-family: 'Sans-serif';
+    font-size:90px;
+    align-items: center;
+    display: flex;
+   animation-fill-mode: forwards;
+   justify-content: center;
+
+}
+
+
+.t1{
+    color: red;
+    animation:nam 1s;
+    position: relative;
+}
+.t2{
+    color: white;
+    animation:nam 2s;
+    position: relative;
+}
+.t3{
+    color: white;
+    animation:nam 3s;
+    position: relative;
+}
+.t4{
+    color: white;
+    animation:nam 4s;
+    position: relative;
+}
+.t5{
+    color: white;
+    animation:nam 5s;
+    position: relative;
+}
+.t6{
+    color: white;
+    animation:nam 5.5s;
+    position: relative;
+}
+.t7{
+    color: white;
+    animation:nam 6s;
+    position: relative;
+}
+.t8{
+    color: white;
+    animation:nam 6.5s;
+    position: relative;
+}
+.t9{
+    color: white;
+    animation:nam 7s;
+    position: relative;
+}
+
+@keyframes nam{
+    0%{top:30px ;right:-650px; font-size:200px; font-style: bold;}
+    100%{top:0 auto ;right:0; }
+}
+@keyframes box{
+    0%{border-color:aqua;}
+    10%{border-color:rgb(98, 255, 98);}
+    20%{border-color:rgb(255, 248, 108)}
+    30%{border-color:rgb(101, 231, 101)}
+    40%{border-color:rgb(255, 31, 229)}
+    50%{border-color:rgb(255, 102, 82);}
+    60%{border-color:rgb(11, 184, 241);}
+    70%{border-color:rgb(198, 96, 101);}
+    80%{border-color:rgb(138, 26, 11);}
+    90%{border-color:rgb(71, 132, 48);}
+    100%{border-color:rgb(58, 58, 237);}
+}
+a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+#head{
+    width: 100%;
+    height: 70px;
+    border-bottom: 10px;
+    border-style: solid;
+    border-color:#ff0000;
+    background-color: black;
+    position:fixed;
+    float: left;
+   
+}
+
+#image{
+    background-image: url(im.jpg);
+    background-size:contain;
+    width:70px;
+    height:58px;
+    float: left;
+}
+
+#menu{
+    
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   height: 40px;
+   float: right;
+   width: 680px;
+   margin-top:10px;
+
+}
+#list{
+    list-style:none;
+    height:100%;
+    
+}
+#list-item{
+    display: inline-block;
+    width:130px;
+    height:100%;
+    text-align: center;
+    padding-top: 10px;
+    background-color:black;
+    color: white;
+    font-size: large;
+    cursor: url('./images/magic-wand.png'); 
+}
+#list-item:hover{
+    border-color: #ff0000;
+    border-radius: 0px 15px 0px 15px ;
+    border-style: solid;
+   
+}

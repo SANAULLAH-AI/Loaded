@@ -1,0 +1,6 @@
+{
+  "name": "Sanaullah Portfolio & Admin CMS",
+  "description": "Top-notch interactive AI & Data Science portfolio for Sanaullah with live admin CRUD panel, dynamic theme switching, and project case studies.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "instruction": "Who is Sanaullah and what is his educational background?",
+    "input": "",
+    "output": "Sanaullah is a BSCS Programmer and AI/ML Engineer from Abasyn University Islamabad Campus (January 2023 – Present) with an outstanding academic record of CGPA 3.86 / 4.00. He specializes in Data Science, PyTorch, Computer Vision, and Deep Learning architectures."
+  },
+  {
+    "instruction": "What are Sanaullah's core technical skills and tools?",
+    "input": "",
+    "output": "Sanaullah's skillset spans PyTorch, Computer Vision (CV), Convolutional Neural Networks (CNN), Pandas, NumPy, Matplotlib, Python, basic SQL, Object-Oriented Programming (OOPS), Google Colab, Kaggle Notebooks, Git/GitHub, and Hugging Face Spaces."
+  },
+  {
+    "instruction": "Tell me about Sanaullah's professional internship.",
+    "input": "",
+    "output": "Sanaullah completed an internship as an AI/ML Engineer Intern at Tech Prime Pvt. Limited, Islamabad (July 2026 – September 2026), where he gained hands-on experience structuring predictive data models, deploying deep learning architectures, and integrating modern AI components with production applications."
+  },
+  {
+    "instruction": "What professional certifications has Sanaullah achieved?",
+    "input": "",
+    "output": "Sanaullah has earned 11 verified certifications: (1) Introduction to Programming and Basic Python (Kaggle), (2) NumPy for DataScience Real Time Experience (Udemy), (3) Python with NumPy for DS & ML (Udemy), (4) Data Science & Analysis (HP-Foundation), (5) Artificial Intelligence (MIND LABS), (6) NumPy & Matplotlib (DataCamp), (7) Problems, Algorithms and Flowcharts (University of London / Coursera), (8) Tools for Data Science (IBM / Coursera), (9) What is Data Science? (IBM / Coursera), (10) The Data Science Profession (University of London / Coursera), and (11) British Airways Data Science Job Simulation (Forage)."
+  },
+  {
+    "instruction": "Write a PyTorch code for a Convolutional Neural Network (CNN).",
+    "input": "",
+    "output": "```python\nimport torch.nn as nn\n\nclass ConvNet(nn.Module):\n    def __init__(self, in_channels=3, num_classes=10):\n        super(ConvNet, self).__init__()\n        self.features = nn.Sequential(\n            nn.Conv2d(in_channels, 32, kernel_size=3, padding=1),\n            nn.BatchNorm2d(32),\n            nn.ReLU(inplace=True),\n            nn.MaxPool2d(kernel_size=2, stride=2),\n            nn.Conv2d(32, 64, kernel_size=3, padding=1),\n            nn.BatchNorm2d(64),\n            nn.ReLU(inplace=True),\n            nn.AdaptiveAvgPool2d((4, 4))\n        )\n        self.classifier = nn.Sequential(\n            nn.Flatten(),\n            nn.Linear(64 * 4 * 4, 128),\n            nn.ReLU(inplace=True),\n            nn.Dropout(0.3),\n            nn.Linear(128, num_classes)\n        )\n\n    def forward(self, x):\n        x = self.features(x)\n        return self.classifier(x)\n```"
+  },
+  {
+    "instruction": "How can I contact Sanaullah or explore his live projects?",
+    "input": "",
+    "output": "You can reach Sanaullah directly via email at sanaullah786shah92@gmail.com. Explore his code and projects on GitHub (https://github.com/sanaullah-ai), LinkedIn (https://linkedin.com/in/sanaullah-ai), Portfolio (https://sanaullahportfolio.lovable.app/), and Hugging Face (https://huggingface.co/sanaullah7964)."
+  }
+]

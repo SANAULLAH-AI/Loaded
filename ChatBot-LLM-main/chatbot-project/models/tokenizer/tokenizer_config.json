@@ -1,0 +1,11 @@
+{
+  "add_bos_token": false,
+  "add_eos_token": false,
+  "bos_token": "<|im_start|>",
+  "clean_up_tokenization_spaces": false,
+  "eos_token": "<|im_end|>",
+  "model_max_length": 32768,
+  "pad_token": "<|im_end|>",
+  "tokenizer_class": "Qwen2Tokenizer",
+  "unk_token": "<|endoftext|>"
+}

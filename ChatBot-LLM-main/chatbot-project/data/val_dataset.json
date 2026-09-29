@@ -1,0 +1,12 @@
+[
+  {
+    "instruction": "What university does Sanaullah attend and what is his GPA?",
+    "input": "",
+    "output": "Sanaullah studies at Abasyn University Islamabad Campus in the Bachelor of Science in Computer Science (BSCS) program with a CGPA of 3.86 out of 4.00."
+  },
+  {
+    "instruction": "What are Sanaullah's primary deep learning and AI frameworks?",
+    "input": "",
+    "output": "Sanaullah specializes in PyTorch, Computer Vision with Convolutional Neural Networks (CNNs), and Hugging Face spaces."
+  }
+]

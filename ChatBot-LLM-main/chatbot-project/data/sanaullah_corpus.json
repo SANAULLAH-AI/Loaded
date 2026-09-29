@@ -1,0 +1,61 @@
+{
+  "personal_profile": {
+    "name": "Sanaullah",
+    "role": "BSCS Programmer & AI/ML Engineer",
+    "tagline": "Specializing in Data Science, Machine Learning, Computer Vision & Deep Learning architectures.",
+    "email": "sanaullah786shah92@gmail.com"
+  },
+  "education": {
+    "institution": "Abasyn University Islamabad Campus",
+    "degree": "Bachelor of Science in Computer Science (BSCS)",
+    "period": "January 2023 – Present",
+    "cgpa": "3.86 / 4.00"
+  },
+  "skills": {
+    "libraries": [
+      "PyTorch",
+      "Computer Vision (CV)",
+      "Convolutional Neural Networks (CNN)",
+      "Pandas",
+      "NumPy",
+      "Matplotlib"
+    ],
+    "languages": [
+      "Python",
+      "SQL (Basic)",
+      "Object-Oriented Programming (OOPS)"
+    ],
+    "tools": [
+      "Google Colab",
+      "Kaggle Notebook",
+      "Git & GitHub",
+      "Hugging Face Spaces"
+    ]
+  },
+  "internship": {
+    "role": "AI / ML Engineer Intern",
+    "company": "Tech Prime Pvt. Limited, Islamabad",
+    "period": "July 2026 – September 2026",
+    "description": "Gained hands-on experience deploying deep learning architectures, structuring predictive data models, and integrating modern AI components with production applications."
+  },
+  "certifications": [
+    "Introduction to Programming and Basic Python (Kaggle)",
+    "NumPy for DataScience Real Time Experience (Udemy)",
+    "Python with NumPy for DS & ML (Udemy)",
+    "Data Science & Analysis (HP-Foundation)",
+    "Artificial Intelligence (MIND LABS sMc Pvt. Ltd.)",
+    "NumPy & Matplotlib (DataCamp)",
+    "Problems, Algorithms and Flowcharts (University of London - Coursera)",
+    "Tools for Data Science (IBM - Coursera)",
+    "What is Data Science? (IBM - Coursera)",
+    "The Data Science Profession (University of London - Coursera)",
+    "British Airways Data Science Job Simulation (Forage)"
+  ],
+  "links": {
+    "github": "https://github.com/sanaullah-ai",
+    "linkedin": "https://linkedin.com/in/sanaullah-ai",
+    "portfolio": "https://sanaullahportfolio.lovable.app/",
+    "huggingface": "https://huggingface.co/sanaullah7964",
+    "kaggle": "https://www.kaggle.com/sanaullah03041417973"
+  }
+}

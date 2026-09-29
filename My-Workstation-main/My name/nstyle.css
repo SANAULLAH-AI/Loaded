@@ -1,0 +1,162 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    padding:0;
+    position:relative;
+}
+
+.M{
+    background-image:url(./images/me.jpg) ;
+    width:100%;
+    height:615px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-size:cover;
+   animation:back 12s ;
+   animation-fill-mode: forwards;
+   animation-delay:12s;
+    
+ 
+}
+
+/* .box{
+    width: 600px;
+    height:200px;
+    border:10px ;
+    border-style:groove ;
+    border-color: rgb(167, 252, 255);
+    margin-left:400px;
+   
+    position: absolute;
+    display: flex;
+    overflow:hidden;
+    justify-content: center;
+    animation:box 10s infinite;
+    animation-duration: 10s;
+    background-attachment: fixed;
+    background-blend-mode: color-burn; 
+} */
+
+.text{
+    margin-top: 400px;
+    float: left;
+    font-family: 'Sans-serif';
+    font-size:90px;
+    align-items: center;
+    display: flex;
+   animation-fill-mode: forwards;
+   justify-content: center;
+
+}
+
+
+.t1{
+    color: red;
+    animation:nam 1s;
+    position: relative;
+}
+.t2{
+    color: white;
+    animation:nam 2s;
+    position: relative;
+}
+.t3{
+    color: white;
+    animation:nam 3s;
+    position: relative;
+}
+.t4{
+    color: white;
+    animation:nam 4s;
+    position: relative;
+}
+.t5{
+    color: white;
+    animation:nam 5s;
+    position: relative;
+}
+.t6{
+    color: white;
+    animation:nam 5.5s;
+    position: relative;
+}
+.t7{
+    color: white;
+    animation:nam 6s;
+    position: relative;
+}
+.t8{
+    color: white;
+    animation:nam 6.5s;
+    position: relative;
+}
+.t9{
+    color: white;
+    animation:nam 7s;
+    position: relative;
+}
+
+@keyframes nam{
+    0%{top:30px ;right:-650px; font-size:200px; font-style: bold;}
+    100%{top:0 auto ;right:0; }
+}
+a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+#head{
+    width: 100%;
+    height: 70px;
+    border-bottom: 10px;
+    border-style: solid;
+    border-color:#ff0000;
+    background-color: black;
+    position:fixed;
+    float: left;
+   
+}
+
+#image{
+    background-image: url();  
+    background-size:contain;
+    width:70px;
+    height:58px;
+    float: left;
+}
+
+#menu{
+    
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   height: 40px;
+   float: right;
+   width: 680px;
+   margin-top:10px;
+
+}
+#list{
+    list-style:none;
+    height:100%;
+    
+}
+#list-item{
+    display: inline-block;
+    width:130px;
+    height:100%;
+    text-align: center;
+    padding-top: 10px;
+    background-color:black;
+    color: white;
+    font-size: large;
+    cursor: pointer;
+}
+#list-item:hover{
+    border-color: #ff0000;
+    border-radius: 0px 15px 0px 15px ;
+    border-style: solid;
+   
+}
